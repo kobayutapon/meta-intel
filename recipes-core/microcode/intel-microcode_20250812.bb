@@ -23,6 +23,8 @@ DEPENDS = "iucode-tool-native"
 COMPATIBLE_HOST = "(i.86|x86_64).*-linux"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+S = "${WORKDIR}/git"
+
 inherit deploy
 
 # Use any of the iucode_tool parameters to filter specific microcodes from the data file
